@@ -16,14 +16,7 @@ public final class Employee extends BaseEmployee  {
         super(name, age, sex, salaryOfDay);
     }
 
-    @Override
-    public int getSalary(Month[] monthArray) {
-        int salary = 0;
-        for (int i = 0; i < monthArray.length; i++) {
-            salary += monthArray[i].getCountWorkDay() * getSalaryOfDay();
 
-        }
-        return salary;
-    }
+
 
 }

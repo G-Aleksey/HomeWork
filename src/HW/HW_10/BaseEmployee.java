@@ -46,10 +46,16 @@ public abstract class BaseEmployee {
     public void setSalaryOfDay(int salaryOfDay) {
         this.salaryOfDay = salaryOfDay;
     }
-    public int getSalary(Month[] monthArray){
-        int salary = 0;
-        return salary;
 
+    public int getSalary(Month[] monthArray) {
+        int salary = 0;
+        for (int i = 0; i < monthArray.length; i++) {
+            salary += monthArray[i].getCountWorkDay() * getSalaryOfDay();
+
+        }
+        return salary;
     }
+
+
 
     }

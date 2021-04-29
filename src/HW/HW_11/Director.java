@@ -1,7 +1,7 @@
 package HW.HW_11;
 
 public final class  Director extends Employee {
-
+    private  static  final int VALUE = 9;
 //    public Director(int baseSalary, String name, int numberOfSubordinates) {
 //        super(baseSalary, name, numberOfSubordinates);
 //    }
@@ -14,7 +14,7 @@ public final class  Director extends Employee {
 
     @Override
     protected int getValue() {
-        return 9;
+        return VALUE;
     }
     @Override
     public int getSalary() {

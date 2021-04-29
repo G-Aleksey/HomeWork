@@ -34,9 +34,9 @@ public abstract class Employee {
     protected int getValue (){
         return 3;
     }
-    public int getSalary() {
-        return this.BaseSalary;
-    }
+    public abstract int getSalary();
+
+
 
 
 

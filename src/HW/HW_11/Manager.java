@@ -1,7 +1,7 @@
 package HW.HW_11;
 
 public final class Manager extends Employee {
-
+private  static  final int VALUE = 3;
 
 
     public Manager(int baseSalary, String name, int NumberOfSubordinates) {
@@ -10,7 +10,10 @@ public final class Manager extends Employee {
     }
 
 
-
+    @Override
+    protected int getValue() {
+        return VALUE;
+    }
 
     @Override
     public int getSalary() {

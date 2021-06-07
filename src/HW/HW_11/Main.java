@@ -3,7 +3,7 @@ package HW.HW_11;
 public class Main {
     public static void main(String[] args) {
 
-        Worker worker = new Worker(80, "SEM", 1);
+        Worker worker = new Worker(80, "Sam");
         Manager manager = new Manager(100, "DEN",3);
         Manager manager1 = new Manager(100, "DEN",5);
         Manager manager2 = new Manager(100, "DEN",8);
@@ -14,7 +14,7 @@ public class Main {
         System.out.println(manager.getSalary());
         System.out.println(director.getSalary());
 
-        Employee[] employee = {worker, manager, director};
+        Employee[] employee = {manager, director};
         Manager[] managers = {manager, manager1, manager2, manager3};
 
         System.out.println(Utils.searchName("SEM", employee));

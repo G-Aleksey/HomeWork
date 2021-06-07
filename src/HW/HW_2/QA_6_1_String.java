@@ -1,4 +1,4 @@
-package HW_2;
+package HW.HW_2;
 
 public class QA_6_1_String {
     public static void main(String[] args) {
